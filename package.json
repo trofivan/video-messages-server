@@ -1,0 +1,25 @@
+{
+  "name": "video-messages-server",
+  "version": "1.0.0",
+  "repository": "git@github.com:trofivan/video-messages-server.git",
+  "author": "Ivan Trofimov <ivan@trofimov.link>",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "start": "nodemon dist/server.js",
+    "build": "tsc",
+    "watch": "tsc -w",
+    "lint": "tslint -c tslint.json -p tsconfig.json",
+    "lint:fix": "tslint --fix -c tslint.json -p tsconfig.json"
+  },
+  "devDependencies": {
+    "@types/node": "^12.0.2",
+    "@types/ws": "^6.0.1",
+    "nodemon": "^1.19.1",
+    "tslint": "^5.16.0",
+    "typescript": "^3.4.5"
+  },
+  "dependencies": {
+    "ws": "^7.0.0"
+  }
+}
